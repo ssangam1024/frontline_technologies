@@ -21,17 +21,15 @@ body {
 .header-left{
     display: flex;
     align-items: center;
-    margin-left: 30px;
-    gap: 10px;
+    justify-content: center;
 }
 .FrontlineLogo {
     height: 75px;
     width: auto;
-    padding-left: 50%;
 }
 .header img.logo {
-    width:300%;
-    height: 70px;
+    height: 70px;  
+    width:auto;
     object-fit: contain;
     cursor: pointer;
 }
@@ -49,9 +47,9 @@ body {
   color: white;
   opacity: 0;
   transform: translate(-10%, -10%) translateY(30px);
-  animation: fadeInUp 1s ease forwards;
+  animation: text-overlay 1s ease forwards;
 }
- @keyframes fadeInUpDiv {
+ @keyframes text-overlay {
 to {
   opacity: 1;
   transform: translateY(0); 
@@ -135,7 +133,7 @@ to {
   }
 
   .carousel img {
-    width: 200px;
+    width: 100px;
     height: auto;
     margin: 0 30px;
     filter: grayscale(100%);
@@ -195,6 +193,7 @@ to {
     justify-content: space-between;
     color: white;  
     transform: skewY(-3deg); 
+    max-width: 100%;
   }
 
 .black-section h1 {
@@ -213,17 +212,16 @@ to {
     display: inline-block;
     margin: 20px 0;
     padding: 10px 20px;
-    border: 1px solid red;
+    border: 1px solid  #ff6600;
     border-radius: 25px;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: background 0.3s;
     
   }
 
 .black-section a:hover {
-    background: red;
+    background:  #ff6600;
   }
 
   .leftText {
@@ -250,7 +248,7 @@ to {
   .leftText div.show {
     opacity: 1;                  
     transform: translateY(0);
-    animation: fadeInDiv 0.8s ease forwards;
+    animation: leftText 0.8s ease forwards;
   }
 
 
@@ -281,7 +279,7 @@ to {
     transition-delay: 0.8s;
   }
   
-  @keyframes fadeInUp {
+  @keyframes leftText {
     to {
       opacity: 1;
       transform: translateY(0);
@@ -315,16 +313,22 @@ to {
   font-weight: 700;
   color: #e03a3c;
   }
+
+
 .chooseUs{
-  display: flex;          
-  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;    
+  flex-direction: column;   
+  align-items: center;   
   gap: 20px;
-  flex-wrap: wrap;       
   text-align: center;
-  flex-direction: column;
+  padding: 0 10% ;      
+  
+  
 }
 .chooseUs p{
-  margin: 30px;
+  margin: 10px;
   padding-left: 10%;
   padding-right: 10%;
   font-family: Arial, sans-serif;
@@ -337,14 +341,65 @@ to {
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   flex: 0 1 220px;
-  position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  transition: transform 0.3s;
   
+}
+
+.chooseUsButtons:hover{
+  transform: translateY(-5px);
 }
 
 .js-message {display:none}
 
+@media (min-width: 768px) {
+  .chooseUs {
+    flex-direction: row;    
+    flex-wrap: wrap;
+  }
+}
+.black-section1{
+  background: #111;
+    margin-bottom: 100px;
+    padding: 60px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;  
+    transform: skewY(-3deg); 
+    max-width: 100%;
+}
 
+.servicesSection{
+  text-align: center;
+  padding-left: 10%; 
+}
+.details{
+  margin: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.details button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 1px solid  red;
+  border-radius: 25px;
+  text-decoration: none;
+  color: red;
+  font-weight: 100;
+  cursor: pointer;
+  
+}
+
+.details button:hover {
+  background:  red;
+  color: white;
+}
