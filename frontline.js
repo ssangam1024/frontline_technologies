@@ -1,8 +1,19 @@
+
+
 const track = document.querySelector(".carousel-track");
 const dots = document.querySelectorAll(".dot");
 let images = document.querySelectorAll(".carousel img");
 
-const imgWidth = 260; 
+const style = getComputedStyle(images[0]);
+const margin = parseInt(style.marginLeft) + parseInt(style.marginRight);
+let imgWidth = images[0].clientWidth + margin;
+
+window.addEventListener("resize", () => {
+    imgWidth = images[0].clientWidth;
+    track.style.transition = "none"; 
+    track.style.transform = `translateX(${-imgWidth * index}px)`;
+  });
+
 
 
 const firstClone = images[0].cloneNode(true);
@@ -13,16 +24,18 @@ track.insertBefore(lastClone, images[0]);
 
 images = document.querySelectorAll(".carousel img"); 
 
+
 let index = 1; 
 track.style.transform = `translateX(${-imgWidth * index}px)`;
 
 function updateCarousel() {
-track.style.transition = "transform 0.5s ease-in-out";
-track.style.transform = `translateX(${-imgWidth * index}px)`;
-
-
-dots.forEach((dot, i) => dot.classList.toggle("active", i === (index - 1 + dots.length) % dots.length));
-}
+    track.style.transition = "transform 0.5s ease-in-out";
+    track.style.transform = `translateX(${-imgWidth * index}px)`;
+  
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === (index - 1 + dots.length) % dots.length);
+    });
+  }
 
 function autoSlide() {
 index++;
@@ -34,10 +47,12 @@ if (index >= images.length - 1) {
 track.style.transition = "none"; 
 index = 1; 
 track.style.transform = `translateX(${-imgWidth * index}px)`;
+updateCarousel();
 } else if (index <= 0) {
 track.style.transition = "none"; 
 index = images.length - 2; 
 track.style.transform = `translateX(${-imgWidth * index}px)`;
+updateCarousel();
 }
 });
 
@@ -49,7 +64,12 @@ dot.addEventListener("click", () => {
 });
 });
 
-setInterval(autoSlide, 2000);
+const carousel = document.querySelector(".carousel");
+let slideInterval = setInterval(autoSlide, 2000);
+
+carousel.addEventListener("mouseenter", () => clearInterval(slideInterval));
+carousel.addEventListener("mouseleave", () => slideInterval = setInterval(autoSlide, 2000));
+
 
 const observer = new IntersectionObserver(entries => {
 entries.forEach(entry => {
@@ -62,6 +82,7 @@ entry.target.classList.remove('show');
 }, { threshold: 0.2 }); 
 
 document.querySelectorAll('.leftText div').forEach(el => observer.observe(el));
+
 
 function displayMessage1() {
     const message = document.querySelector('.js-message1');
