@@ -104,7 +104,7 @@ a.hamburger {
   color: white;
   opacity: 0;
   transform: translate(-10%, -10%) translateY(30px);
-  animation: text-overlay 1s ease forwards;
+  animation: text-overlay 5s ease forwards;
 }
  @keyframes text-overlay {
 to {
@@ -137,31 +137,31 @@ to {
 }
 
 .carousel {
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   position: relative;
+  background: #fff;
+  padding: 50px 0;  
 }
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  gap: 100px;  
 }
 
 .carousel-track img {
-  width: 150px;
-  height: auto;
-  margin: 0 50px;
+  width: auto;
+  height: 50px;
   filter: grayscale(100%);
   cursor: pointer;
   opacity: 0.6;
-  transition: all 0.3s ease, filter 0.3s ease;  
+  transition: all 0.3s ease, filter 0.3s ease; 
 }
-.carousel-track img.active {
-  filter: grayscale(0%);
-  opacity: 8;  
-}
+
 .carousel-track img:hover {
-  transform: scale(1.05); 
-  filter: brightness(1.2); 
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  opacity: 1;
+  
 }
 
 .dots {
@@ -315,7 +315,7 @@ to {
   border-radius: 10px;
   transform: translateY(30px); 
   opacity: 0 ;
-  transition: transform 0.3s ease, opacity 0.3s ease;  
+  transition: transform 0.5s ease, opacity 0.5s ease;  
 }
 .leftText div.show {
   opacity: 1;                  
@@ -338,19 +338,20 @@ to {
   transition-delay: 0.2s;
 }
 .leftText div:nth-child(2) {
-  transition-delay: 0.4s;
-}
-.leftText div:nth-child(3) {
   transition-delay: 0.6s;
 }
-.leftText div:nth-child(4) {
-  transition-delay: 0.8s;
+.leftText div:nth-child(3) {
+  transition-delay: 1.0s;
 }
-@keyframes leftText {
+.leftText div:nth-child(4) {
+  transition-delay: 1.5s;
+}
+@keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+
 }
 .details{
   margin: 10px;
