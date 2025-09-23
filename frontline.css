@@ -46,10 +46,11 @@ body {
     display: none;
   }
   
-}
-.nav-links :hover  {
+}   
+.nav-links:hover  {
   color: #cc5200;
 }
+
 .job-button {
   background: #f04b3f;
   color: #fff;
