@@ -1,7 +1,8 @@
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #eef2f3;
+    
     
 }
 .header{
@@ -9,6 +10,7 @@ body {
   justify-content: space-between; 
   align-items: center; 
   background-color: white; 
+  width: auto;
   
 }
 
@@ -16,42 +18,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
 }
-.FrontlineLogo {
+.FrontlineLogo{
   height: 95px;         
   width: auto;
   object-fit: contain;   
   cursor: pointer;
-  padding: 0 60px;       
+   
+
 }
-.header-right {
+.header-right{
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-right: 40px  ;
   cursor: pointer;
   justify-content: space-between;
   padding: 10px 20px;
   
 }
-.nav-links  {
+.nav-links{
   display: flex;
   gap: 30px;
   text-decoration: none;
   color: #111;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px){
   .nav-links {
     display: none;
   }
   
 }   
-.nav-links:hover  {
+.nav-links:hover {
   color: #cc5200;
 }
 
-.job-button {
+.job-button{
   background: #f04b3f;
   color: #fff;
   border: none;
@@ -60,20 +63,21 @@ body {
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
-  margin-left: 10px;
+  
+  
   
 }
-.job-button:hover {
+.job-button:hover{
   background: #d63c32;
 }
-.blink-text { 
+.blink-text{ 
   animation: blink 1s infinite; 
 } 
-@keyframes blink {
+@keyframes blink{
   0%, 75%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
   }
-.hamburger {
+.hamburger{
   font-size: 28px;
   cursor: pointer;
   display: block;
@@ -81,50 +85,50 @@ body {
   margin-left:auto ;  
 }
   
-@media (min-width: 900px) {
+@media (min-width: 900px){
     .hamburger {
       display: none; 
     }
 }
-a.hamburger {
+a.hamburger{
   text-decoration: none;
 }
 
-.image-section img {
+.image-section img{
   width: 100%;
   height: auto;
   margin: 0;
   display: block;
-  text-align: left;    
+   
+    
 }
-.text-overlay {
+.text-overlay{
   position: absolute;
-  top: 30%;
-  left: 20%;
+  text-align: justify;
   z-index: 1;
   color: white;
   opacity: 0;
   transform: translate(-10%, -10%) translateY(30px);
   animation: text-overlay 5s ease forwards;
 }
- @keyframes text-overlay {
+ @keyframes text-overlay{
 to {
   opacity: 1;
   transform: translateY(0); 
 }
 }
-.text-overlay h1 {
+.text-overlay h1{
   font-size: 2.5rem;
   margin: 0;
   text-shadow: 2px 2px 5px black;  
 }
-.text-overlay h2 {
+.text-overlay h2{
   font-size: 1.6rem;
   font-family:sans-serif;
   margin: 10px 0;
   text-shadow: 2px 2px 5px black;
 }
-.text-overlay a {
+.text-overlay a{
   display: inline-block;
   padding: 10px 20px;
   background: #ff6600;
@@ -133,23 +137,23 @@ to {
   font-weight: bold;
   border-radius: 5px;
 }
-.text-overlay a:hover {
+.text-overlay a:hover{
   background: #cc5200;
 }
 
-.carousel {
+.carousel{
   width: 100%;
   overflow: hidden;
   position: relative;
   background: #fff;
   padding: 50px 0;  
 }
-.carousel-track {
+.carousel-track{
   display: flex;
   gap: 100px;  
 }
 
-.carousel-track img {
+.carousel-track img{
   width: auto;
   height: 50px;
   filter: grayscale(100%);
@@ -158,22 +162,22 @@ to {
   transition: all 0.3s ease, filter 0.3s ease; 
 }
 
-.carousel-track img:hover {
+.carousel-track img:hover{
   transform: scale(1.05);
   filter: brightness(1.2);
   opacity: 1;
   
 }
 
-.dots {
+.dots{
   text-align: center;
   margin-top: 15px;
   margin-bottom: 100px;
 }
-.dot.active {
+.dot.active{
   background-color: red;
 }
-.dot {
+.dot{
   display: inline-block;
   height: 12px;
   width: 12px;
@@ -184,7 +188,7 @@ to {
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
-.black-section {
+.black-section{
   background: #111;
   margin-bottom: 100px;
   padding: 60px 10%;
@@ -195,21 +199,21 @@ to {
   transform: skewY(-3deg); 
   max-width: 100%;
 }
-.black-section h2 {
+.black-section h2{
   font-size: 2.5rem;
   margin: 10px;
   margin-top: 50px;
   transform: skewY(3deg);
   
 }
-.black-section p {
+.black-section p{
   font-size: 1rem;
   line-height: 1.6;
   max-width: 500px;
   margin: 10px;
   transform: skewY(3deg);
 }
-.black-section a {
+.black-section a{
   display: inline-block;
   margin: 20px 0;
   padding: 10px 20px;
@@ -222,10 +226,10 @@ to {
   
 }
 
-.black-section a:hover {
+.black-section a:hover{
   background:  #ff6600;
 }
-.glanceSection {
+.glanceSection{
   text-align: center;
   margin-bottom: 20px;
 }
@@ -235,7 +239,7 @@ to {
   gap: 30px;
   flex-wrap: wrap;
 }
-.glanceButtons {
+.glanceButtons{
   background: #fff;
   padding: 30px 20px;
   text-align: center;
@@ -267,7 +271,7 @@ to {
   padding-right: 10%;
   font-family: Arial, sans-serif;
 }
-.chooseUsButtons { 
+.chooseUsButtons{ 
   background: #fff;
   padding: 20px 15px;
   text-align: center;
@@ -285,8 +289,8 @@ to {
 }
 .js-message {display:none
 }
-@media (min-width: 768px) {
-  .chooseUs {
+@media (min-width: 768px){
+  .chooseUs{
     flex-direction: row;    
     flex-wrap: wrap;
   }
@@ -306,48 +310,47 @@ to {
   text-align: center;
   padding-left: 10%; 
 }
-.leftText {
+.leftText{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   flex: 1;
   margin-top: 40px; 
 }
-.leftText div {
+.leftText div{
   background: #1a1a1a;
-  padding: 20px;
   border-radius: 10px;
   transform: translateY(30px); 
   opacity: 0 ;
   transition: transform 0.5s ease, opacity 0.5s ease;  
 }
-.leftText div.show {
+.leftText div.show{
   opacity: 1;                  
   transform: translateY(0);
   animation: leftText 0.8s ease forwards;
 }
-.leftText div:hover {
+.leftText div:hover{
   transform: translateY(-5px);
 }
-.leftText h2 {
+.leftText h2{
   font-size: 1.4rem;
   margin-bottom: 10px;
   color: white;
 }
-.leftText p {
+.leftText p{
   font-size: 0.95rem;
   color: #ddd;
 }
-.leftText div:nth-child(1) {
+.leftText div:nth-child(1){
   transition-delay: 0.2s;
 }
-.leftText div:nth-child(2) {
+.leftText div:nth-child(2){
   transition-delay: 0.6s;
 }
-.leftText div:nth-child(3) {
+.leftText div:nth-child(3){
   transition-delay: 1.0s;
 }
-.leftText div:nth-child(4) {
+.leftText div:nth-child(4){
   transition-delay: 1.5s;
 }
 @keyframes fadeInUp {
@@ -365,7 +368,7 @@ to {
   text-align: center;
   font-family: Arial, sans-serif;
 }
-.details button {
+.details button{
   display: inline-block;
   margin: 20px 0;
   padding: 10px 20px;
@@ -376,7 +379,7 @@ to {
   font-weight: 100;
   cursor: pointer;  
 }
-.details button:hover {
+.details button:hover{
   background:  red;
   color: white;
 }
