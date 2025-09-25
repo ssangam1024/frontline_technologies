@@ -34,7 +34,7 @@ body{
   gap: 15px;
   cursor: pointer;
   justify-content: space-between;
-  padding: 10px 20px;
+  
   
 }
 .nav-links{
@@ -54,22 +54,29 @@ body{
   color: #cc5200;
 }
 
-.job-button{
-  background: #f04b3f;
-  color: #fff;
+.job-button {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: #e74c3c;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
   border: none;
-  padding: 10px 30px;
-  border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
-  display: inline-block;
-  
-  
-  
+  transition: background 0.3s ease;
+
+  width: 100%;        /* never overflow parent */
+  max-width: 220px;   /* cap size */
+  margin: 0 auto;     /* center horizontally */
+  box-sizing: border-box; /* include padding in width */
 }
+
 .job-button:hover{
   background: #d63c32;
 }
+
+
 .blink-text{ 
   animation: blink 1s infinite; 
 } 
@@ -83,6 +90,8 @@ body{
   display: block;
   color: #333;
   margin-left:auto ;  
+  text-decoration: none;
+
 }
   
 @media (min-width: 900px){
@@ -93,30 +102,39 @@ body{
 a.hamburger{
   text-decoration: none;
 }
-
+.image-section {
+  position: relative;       /* anchor for overlay */
+  width: 100%;
+  overflow: hidden;
+}
 .image-section img{
   width: 100%;
   height: auto;
-  margin: 0;
   display: block;
    
     
 }
-.text-overlay{
+.text-overlay {
   position: absolute;
-  text-align: justify;
+  top: 30%;                 /* center vertically */
+  left: 20%;                /* center horizontally */
+  transform: translate(-50%, -50%); 
+  text-align: center;
   z-index: 1;
   color: white;
   opacity: 0;
-  transform: translate(-10%, -10%) translateY(30px);
-  animation: text-overlay 5s ease forwards;
+  animation: fadeInUp 2s ease forwards;
+  padding: 0 20px;          /* safe spacing for small screens */
+  max-width: 90%;           /* prevent overflow */
 }
- @keyframes text-overlay{
-to {
-  opacity: 1;
-  transform: translateY(0); 
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
-}
+
 .text-overlay h1{
   font-size: 2.5rem;
   margin: 0;
@@ -124,21 +142,39 @@ to {
 }
 .text-overlay h2{
   font-size: 1.6rem;
-  font-family:sans-serif;
   margin: 10px 0;
+  font-family:sans-serif;
   text-shadow: 2px 2px 5px black;
 }
-.text-overlay a{
+.text-overlay a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #ff6600;
   color: white;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+  box-sizing: border-box;
+
 }
+
+
 .text-overlay a:hover{
   background: #cc5200;
+}
+@media (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 2rem;
+  }
+  .text-overlay h2 {
+    font-size: 1.2rem;
+  }
+  .text-overlay a {
+    width: 90%; /* button expands on small screens */
+  }
 }
 
 .carousel{
@@ -309,13 +345,16 @@ to {
 .servicesSection{
   text-align: center;
   padding-left: 10%; 
+  transform: skewY(+3deg); 
+  
 }
-.leftText{
+.leftText {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  flex: 1;
   margin-top: 40px; 
+  flex: 1;
+  
 }
 .leftText div{
   background: #1a1a1a;
@@ -330,7 +369,7 @@ to {
   animation: leftText 0.8s ease forwards;
 }
 .leftText div:hover{
-  transform: translateY(-5px);
+  transform: translateY(+5px);
 }
 .leftText h2{
   font-size: 1.4rem;
