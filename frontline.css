@@ -66,10 +66,10 @@ body{
   cursor: pointer;
   transition: background 0.3s ease;
 
-  width: 100%;        /* never overflow parent */
-  max-width: 220px;   /* cap size */
-  margin: 0 auto;     /* center horizontally */
-  box-sizing: border-box; /* include padding in width */
+  width: 100%;       
+  max-width: 220px;   
+  margin: 0 auto;     
+  box-sizing: border-box; 
 }
 
 .job-button:hover{
@@ -103,7 +103,7 @@ a.hamburger{
   text-decoration: none;
 }
 .image-section {
-  position: relative;       /* anchor for overlay */
+  position: relative;      
   width: 100%;
   overflow: hidden;
 }
@@ -116,16 +116,16 @@ a.hamburger{
 }
 .text-overlay {
   position: absolute;
-  top: 30%;                 /* center vertically */
-  left: 20%;                /* center horizontally */
+  top: 30%;               
+  left: 20%;                
   transform: translate(-50%, -50%); 
   text-align: center;
   z-index: 1;
   color: white;
   opacity: 0;
   animation: fadeInUp 2s ease forwards;
-  padding: 0 20px;          /* safe spacing for small screens */
-  max-width: 90%;           /* prevent overflow */
+  padding: 0 20px;         
+  max-width: 90%;           
 }
 
 @keyframes fadeInUp {
@@ -173,7 +173,7 @@ a.hamburger{
     font-size: 1.2rem;
   }
   .text-overlay a {
-    width: 90%; /* button expands on small screens */
+    width: 90%; 
   }
 }
 
