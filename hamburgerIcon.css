@@ -1,8 +1,32 @@
-.header  {
-    
-    cursor: pointer;
-  }
-  
-  .header :hover  {
-    color: #cc5200;
-  }
+.menu {
+  position: fixed;
+  width: 100%;          /* smaller width */
+  height: 100%; 
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  transition: transform 0.3s ease;
+  z-index: 100;
+
+}
+.menu h4 {
+  margin: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  transition: color 0.2s;
+}
+
+.menu h4:hover {
+  color: #d14c3b;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+}
