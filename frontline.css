@@ -10,7 +10,10 @@ body{
   justify-content: space-between; 
   align-items: center; 
   background-color: white; 
-  width: auto;
+  width: 100%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  position: relative;
   
 }
 
@@ -19,6 +22,7 @@ body{
     align-items: center;
     justify-content: center;
     width: auto;
+    max-height: 50px;
 }
 .FrontlineLogo{
   height: 95px;         
@@ -32,19 +36,17 @@ body{
   display: flex;
   align-items: center;
   gap: 15px;
-  cursor: pointer;
-  justify-content: space-between;
   
   
 }
 .nav-links{
   display: flex;
-  gap: 30px;
+  gap: 15px;
   text-decoration: none;
   color: #111;
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
   .nav-links {
     display: none;
   }
@@ -65,10 +67,9 @@ body{
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
-
+  margin-right: 20px;
   width: 100%;       
-  max-width: 220px;   
-  margin: 0 auto;     
+  max-width: 220px;       
   box-sizing: border-box; 
 }
 
@@ -76,6 +77,11 @@ body{
   background: #d63c32;
 }
 
+@media (max-width: 600px) {
+  .job-button {
+    width: 100%;
+  }
+}
 
 .blink-text{ 
   animation: blink 1s infinite; 
@@ -89,8 +95,9 @@ body{
   cursor: pointer;
   display: block;
   color: #333;
-  margin-left:auto ;  
+  margin-right: 20px;
   text-decoration: none;
+
 
 }
   
@@ -354,12 +361,13 @@ a.hamburger{
   gap: 40px;
   margin-top: 40px; 
   flex: 1;
+  transform: skewY(+3deg); 
   
 }
 .leftText div{
   background: #1a1a1a;
   border-radius: 10px;
-  transform: translateY(30px); 
+  
   opacity: 0 ;
   transition: transform 0.5s ease, opacity 0.5s ease;  
 }
@@ -375,10 +383,15 @@ a.hamburger{
   font-size: 1.4rem;
   margin-bottom: 10px;
   color: white;
+  transform: skewY(0deg);
 }
 .leftText p{
-  font-size: 0.95rem;
+  
   color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 10px;
+  transform: skewY(0deg);
 }
 .leftText div:nth-child(1){
   transition-delay: 0.2s;
@@ -390,15 +403,22 @@ a.hamburger{
   transition-delay: 1.0s;
 }
 .leftText div:nth-child(4){
-  transition-delay: 1.5s;
+  transition-delay: 1.4s;
 }
+.leftText div:nth-child(5){
+  transition-delay: 1.8s;
+}
+.leftText div:nth-child(6){
+  transition-delay: 2.2s;
+}
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 
-}
+} 
 .details{
   margin: 10px;
   padding-left: 10%;
