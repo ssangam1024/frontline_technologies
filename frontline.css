@@ -101,7 +101,10 @@ body{
 
 
 }
-  
+
+@media (min-width: 900px)
+  { .hamburger { display: none; } } 
+a.hamburger{ text-decoration: none; }
 
 
 .popup-overlay {
