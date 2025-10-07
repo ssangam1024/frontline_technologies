@@ -23,9 +23,9 @@
                 </nav>
                   
                     <button class="job-button"> <span class="blink-text"> Job-Opening </span> </button>
-
-                    <a href="hamburgericon.html" class="hamburger" id="menu-toggle">&#9776;</a>
+                    <a href="#" class="hamburger" id="menu-toggle" onclick="openPopup(event)">&#9776;</a>
             </div>
+         
             
             
         </header>
@@ -238,6 +238,17 @@
             </div>
             
         </div>  
-        <script src="frontline.js"> </script>                 
+        <script src="frontline.js"> </script>     
+        <div class="popup-overlay" id="popupOverlay">
+            <div> <button class="close-btn" onclick="closePopup()">&times;</button> </div>
+            <div class="popup">
+              
+              <h4>Home</h4>
+              <h4>About</h4>
+              <h4>Services</h4>
+              <h4>Careers</h4>
+              <h4>Contact</h4>
+            </div>
+          </div>            
     </body>
 </html> 
