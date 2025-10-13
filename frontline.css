@@ -11,7 +11,7 @@ body{
   align-items: center; 
   background-color: white; 
   width: 100%;
-  padding: 20px 0px;
+  padding: 25px 0px;
   box-sizing: border-box;
   position: relative;
   
@@ -29,7 +29,7 @@ body{
   width: auto;
   object-fit: contain;   
   cursor: pointer;
-   
+  margin-left: 90px;
 
 }
 .header-right{
@@ -38,6 +38,13 @@ body{
   gap: 15px;
   
   
+}
+.header-right a{
+  color: black;
+  cursor: pointer;
+}
+.header-right a:hover {
+  color :  #ff6600;
 }
 .nav-links{
   display: flex;
@@ -165,17 +172,18 @@ a.hamburger{ text-decoration: none; }
 }
 .text-overlay {
   position: absolute;
-  top: 30%;               
-  left: 20%;                
-  transform: translate(-50%, -50%); 
-  text-align: center;
+  top: 20%;                
+  margin-left: 90px;      
+  transform: translateY(-30%); 
+      
   z-index: 1;
   color: white;
   opacity: 0;
   animation: fadeInUp 2s ease forwards;
-  padding: 0 20px;         
-  max-width: 90%;           
-}
+  padding: 0 20px;
+  max-width: 90%;
+}        
+
 
 @keyframes fadeInUp {
   to {
@@ -185,15 +193,20 @@ a.hamburger{ text-decoration: none; }
 }
 
 .text-overlay h1{
-  font-size: 2.5rem;
+  font-size: 3.0rem;
   margin: 0;
   text-shadow: 2px 2px 5px black;  
+  display: inline-block;    
+  max-width: 500px;         
+  word-wrap: break-word;   
+  line-height: 1.2;  
 }
 .text-overlay h2{
   font-size: 1.6rem;
   margin: 10px 0;
   font-family:sans-serif;
   text-shadow: 2px 2px 5px black;
+  font-weight: normal;
 }
 .text-overlay a {
   display: inline-block;
@@ -202,11 +215,12 @@ a.hamburger{ text-decoration: none; }
   color: white;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background 0.3s ease;
   width: 100%;
-  max-width: 220px;
+  max-width: 135px;
   box-sizing: border-box;
+  
 
 }
 
