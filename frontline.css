@@ -58,7 +58,10 @@ body{
     display: none;
   }
   
-}   
+}  
+.nav-links a{
+  text-decoration: none; 
+} 
 .nav-links:hover {
   color: #cc5200;
 }
