@@ -129,8 +129,6 @@ a.hamburger{ text-decoration: none; }
   justify-content: center;
   z-index: 2000;
 }
-
-/* Popup box */
 .popup {
   background: white;
   padding: 30px;
