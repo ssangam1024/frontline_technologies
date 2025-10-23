@@ -108,8 +108,6 @@ body{
   color: #333;
   margin-right: 20px;
   text-decoration: none;
-
-
 }
 
 @media (min-width: 900px)
@@ -139,7 +137,14 @@ a.hamburger{ text-decoration: none; }
   cursor: pointer;
   
 }
-.popup h4:hover {
+.popup a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #111;
+}
+.popup a:hover {
   color: red;
 }
 
