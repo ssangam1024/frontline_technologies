@@ -138,7 +138,15 @@ body{
     cursor: pointer;
     
 }
-.popup h4:hover {
+.popup a{
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #111;
+
+}
+.popup a:hover {
     color: red;
 }
 .AboutUsBlackSection {

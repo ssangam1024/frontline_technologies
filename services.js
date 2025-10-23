@@ -28,3 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     message.style.display = (message.style.display === "block") ? "none" : "block";
   }
   
+  function openPopup(event) {
+    event.preventDefault();
+    document.getElementById("popupOverlay").style.display = "flex";
+  }
+  
+  function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+  }
