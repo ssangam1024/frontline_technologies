@@ -149,6 +149,10 @@ body{
 .popup a:hover {
     color: red;
 }
+.popup a:hover {
+  color: red;
+}
+
 .AboutUsBlackSection {
     background: #111;
     margin-bottom: 50PX;

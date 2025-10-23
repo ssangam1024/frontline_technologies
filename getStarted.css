@@ -135,13 +135,18 @@ body{
     position: relative; 
     cursor: pointer;
     
-  }
+}
 .popup a{
-    text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #111;
+  display: block;
+  cursor: pointer;
 }
 .popup a:hover {
-    color: red;
+  color: red;
 }
+
 .AboutUsBlackSection {
     background: #111;
     margin-bottom: 50PX;
