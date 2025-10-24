@@ -12,7 +12,16 @@ counters.forEach(counter => {
         } else {
             counter.innerText = target;
         }
+        
     };
 
     updateCount();
 });
+function openPopup(event) {
+    event.preventDefault();
+    document.getElementById("popupOverlay").style.display = "flex";
+  }
+  
+  function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+  }
