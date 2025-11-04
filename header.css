@@ -98,7 +98,7 @@ body{
     margin-left: auto;
     text-decoration: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .FrontlineLogo {
       margin-left: 20px;
       height: 70px;
