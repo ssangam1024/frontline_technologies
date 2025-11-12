@@ -1,0 +1,127 @@
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.AboutUsBlackCarrer {
+    background: #111;
+    padding: 14px 7%;  
+    color: white;   
+}
+.AboutUsBlackCarrer h2{
+    font-style: Arial;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;    
+} 
+.homeButton{
+    text-decoration: none;
+    color: lightgrey;
+    cursor:pointer
+}
+.homeButton:hover {
+    color: white;
+}
+@media (max-width: 1100px) {
+    .AboutUsBlackSection h2,
+    .AboutUsBlackSection a {
+      margin-left: 20px;
+    }
+}
+.Container {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+    background-color: #fff;
+    padding-top: 30px;
+    
+}
+.Container p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 85px;
+    margin-right: 85px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.Container h2{
+    font-size: 2rem;
+    font-weight: 75%;
+}
+.career-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+.career-image img {
+  width: 670px;
+  max-width: 100%;
+}
+.career-form {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 500px){
+  .career-form{
+    max-width: 280px;
+    width: 100%;
+  }
+
+}
+.career-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  flex: 1;
+}
+label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+input,textarea {
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  border-color: #e63946; 
+}
+textarea {
+  resize: none;
+}
+.btn-submit {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-submit:hover {
+  background-color: #d62828;
+}
