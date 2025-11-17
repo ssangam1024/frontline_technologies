@@ -22,8 +22,8 @@ body {
 }
 @media (max-width: 1100px) {
   .AboutUsBlackCarrer h2 ,
-  .homeButton{
-    margin-left: 20px;
+  .homeButton {
+    margin-left: 30px;
   }
 }
 .Container {
@@ -33,9 +33,14 @@ body {
 }
 .Container p {
     font-size: 1rem;
-    margin: 0 85px 1em 7%;
+    margin: 0 85px 1em 10%;
     text-align: justify;
     text-align-last: center;
+}
+@media (max-width: 600px) {
+  .Container p {
+    margin-left: 20%;
+  }
 }
 .Container h2{
     font-size: 2rem;
@@ -43,10 +48,10 @@ body {
 .career-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   padding: 40px;
   flex-wrap: nowrap;
-  font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
 .career-image img {
@@ -56,10 +61,10 @@ body {
 }
 @media (max-width: 1100px) {
   .career-image img {
-    margin-left:20px;
+    margin-left: 20%;
   }
 }
-@media (max-width: 700px){
+@media (max-width: 1000px){
   .career-section{
     flex-direction: column;
     align-items: center;
@@ -83,9 +88,18 @@ body {
   .career-form {
     margin-left: 0;
   }
+  margin-left: 40px;
+}
+@media (max-width: 700px) {
+  .career-form {
+    margin-left: 0;
+  }
 }
 @media (max-width: 500px){
   .career-form{
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
     width: 90%;
     max-width: 100%;
     padding: 20px;
