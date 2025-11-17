@@ -22,8 +22,8 @@ body {
 }
 @media (max-width: 1100px) {
   .AboutUsBlackCarrer h2 ,
-  .homeButton{
-    margin-left: 20px;
+  .homeButton {
+    margin-left: 30px;
   }
 }
 .Container {
@@ -33,7 +33,7 @@ body {
 }
 .Container p {
     font-size: 1rem;
-    margin: 0 85px 1em 7%;
+    margin: 0 85px 1em 10%;
     text-align: justify;
     text-align-last: center;
 }
@@ -61,7 +61,7 @@ body {
 }
 @media (max-width: 1100px) {
   .career-image img {
-    margin-left: 7%;
+    margin-left: 20%;
   }
 }
 @media (max-width: 1000px){
