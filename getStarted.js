@@ -4,11 +4,11 @@ counters.forEach(counter => {
     const updateCount = () => {
         const target = +counter.getAttribute('data-target');
         let count = +counter.innerText;
-        const increment = target / 200; // speed of counting
+        const increment = target / 200;
 
         if (count < target) {
             counter.innerText = Math.ceil(count + increment);
-            requestAnimationFrame(updateCount); // call next frame
+            requestAnimationFrame(updateCount);
         } else {
             counter.innerText = target;
         }
@@ -17,11 +17,3 @@ counters.forEach(counter => {
 
     updateCount();
 });
-function openPopup(event) {
-    event.preventDefault();
-    document.getElementById("popupOverlay").style.display = "flex";
-  }
-  
-  function closePopup() {
-    document.getElementById("popupOverlay").style.display = "none";
-  }
