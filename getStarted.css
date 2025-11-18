@@ -53,7 +53,7 @@
     line-height: 1.6;
 }  
 .stats {
-    margin-top: 5%;
+    margin-top: 10%;
     background: #111;
     margin-bottom: 100px;
     padding: 60px 10%;
@@ -62,14 +62,22 @@
     justify-content: space-between;
     color: white;  
     transform: skewY(-3deg); 
-    max-width: 100%;    
-}
-.statbox {
-    background: #111;
-    padding: 20px;
-    border-radius: 12px;
+    max-width: 100%;   
 }
 
+@media (max-width: 430px) {
+    .stats {
+         
+        justify-content: center;  
+        padding: 40px 20px;       
+        gap: 20px;               
+    }
+
+    .stats > div {
+        flex: 1 1 100%;          
+        text-align: center;
+    }
+}
 .statbox .icon {
     background: #fff;
     width: 80px; 
@@ -78,14 +86,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 15px;   
+    margin: 0 auto 15px;  
+    transform: skewY(+3deg); 
+      
 }
 .icon img {
     width: 40px;   
     height: 40px;
     object-fit: contain;
     justify-content: center;  
-    align-content: center;    
+    align-content: center;  
+    transform: skewY(+3deg); 
+
 }
 .statbox h2 {
     font-size: 36px;
@@ -93,6 +105,8 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    transform: skewY(+3deg); 
+
 }
 .statbox p {
     font-size: 30px;
@@ -100,5 +114,7 @@
     margin: 10px 0 0;
     font-weight: bold;
     text-align: center;
+    transform: skewY(+3deg); 
+
 }
 
