@@ -1,0 +1,129 @@
+.footerTop{ 
+    padding: 60px 0px 30px;
+    background: rgb(27, 27, 27);
+    display: flex;               
+    gap: 30px;
+    font-style: "Open Sans", sans-serif;
+    
+}
+.addressInfo{
+    color: white;
+    flex: 0 0 300px; 
+}
+.addressInfo p{ 
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 200px;
+    overflow-wrap: break-word;
+    font-family:"Open Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.FrontlineLogo{
+    margin-left: 50px;
+    width: auto;
+    height: 95px;
+    object-fit: contain;   
+    border-radius: 6%
+}
+.container1{
+    color: white;
+    cursor: pointer;  
+    flex: 0 0 200px; 
+    line-height: 2;
+    font-family:"Open Sans", sans-serif;
+    font-size: 15px;
+}
+.container1 a {
+    color: #AAAA; 
+    text-decoration: none;
+}
+.container1 a::before {
+    content: "> ";
+    color: white;
+    margin: 10px;
+}
+.container1 a:hover{
+    color: white;
+}
+.container2{
+    color: white;
+    cursor: pointer;  
+    flex: 0 0 380px;
+    line-height: 2;
+    font-family:"Open Sans", sans-serif;
+    font-size: 15px;
+}
+.container2 a {
+    color: #AAAA; 
+    text-decoration: none; 
+
+}
+.container2 a::before {
+    content: "> ";
+    color: white;
+    margin: 10px;
+    left: 0;
+    
+}
+.container2 a:hover {
+    color: white;
+}
+.container2 p{
+    line-height: 1.5;
+}
+.underline{
+    position: relative;
+    display: inline-block;
+}
+.underline::after {
+    content: "";
+    width: 20px;  
+    height: 3px;  
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;  
+}
+.searchBox{
+    gap: 0;
+    display: flex;
+}
+.searchBox input {
+    padding: 8px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px ;
+    margin: 0;
+    
+}
+  
+.searchBox button {
+    padding: 9px 25px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    margin: 0;
+    
+}
+  
+.searchBox button:hover {
+    background: gray;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: black; 
+    width: 100%;
+    padding: 25px 0px;
+    box-sizing: border-box;
+    position: relative;  
+}
+.footerBottom p{
+    color: white;
+    margin-left: 70px;
+}
+
