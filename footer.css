@@ -7,13 +7,12 @@
     width: 100%;
     padding: 60px 0px 30px;
     background: rgb(27, 27, 27);
-    display: flex;               
-    gap: 30px;
-    font-style: "Open Sans", sans-serif;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-style: "Open Sans", sans-serif;    
 }
-
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .footerTop {
         flex-direction: column; 
         gap: 10px; 
@@ -25,16 +24,14 @@
     min-width: 150px; 
     max-width: 100%; 
 }
-@media (max-width: 414px) {
-    .addressInfo{
-        flex: 0 0 200px; 
-        
-    }
-}
 @media (max-width: 1100px) {
     .addressInfo{
-        flex: 0 0 280px; 
-        
+        flex: 0 0 280px;         
+    }
+}
+@media (max-width: 600px) {
+    .addressInfo{
+        flex: 0 0 200px;         
     }
 }
 .addressInfo p{ 
@@ -46,34 +43,31 @@
     line-height: 1.5;
     font-size: 15px;
 }
-@media (max-width: 414px) {
-    .addressInfo p{
-        margin-left: 10px ;
-
-    }
-}
 @media (max-width: 1100px) {
     .addressInfo p{
-        margin-left: 50px;
-        
+        margin-left: 50px;        
     }
 }
-
-.FrontlineLogo{
+@media (max-width: 600px) {
+    .addressInfo p{
+        margin-left: 15px ;
+    }
+}
+.footerTop .FrontlineLogo {
     margin-left: 50px;
     width: auto;
     height: 95px;
     object-fit: contain;   
     border-radius: 6%
 }
-@media (max-width: 414px) {
-    .FrontlineLogo {
-        margin-left: 0px ;
+@media (max-width: 1100px) {
+    .footerTop .FrontlineLogo {
+        margin-left: 30px ;
     }
 }
-@media (max-width: 1100px) {
-    .FrontlineLogo {
-        margin-left: 30px ;
+@media (max-width: 600px) {
+    .footerTop .FrontlineLogo  {
+        margin-left: 0px ;
     }
 }
 .container1{
@@ -86,16 +80,14 @@
     min-width: 150px; 
     max-width: 100%; 
 }
-@media (max-width: 414px) {
-    .container1{
-        margin-left: 10px ;
-    }
-}
-
 @media (max-width: 1100px) {
     .container1{
-        flex: 0 0 80px; 
-        
+        flex: 0 0 80px;         
+    }
+}
+@media (max-width: 600px) {
+    .container1{
+        margin-left: 15px ;
     }
 }
 .container1 a {
@@ -107,7 +99,6 @@
     color: white;
     margin: 10px;
 }
-
 .container1 a:hover{
     color: white;
 }
@@ -121,15 +112,15 @@
     min-width: 150px; 
     max-width: 100%; 
 }
-@media (max-width: 414px) {
-    .container2{
-        margin-left: 10px ;
-        flex: 0 0 250px;
-    }
-}
 @media (max-width: 1100px) {
     .container2{
         flex: 0 0 250px; 
+    }
+}
+@media (max-width: 600px) {
+    .container2{
+        margin-left: 15px ;
+        flex: 0 0 250px;
     }
 }
 .container2 a {
@@ -141,8 +132,7 @@
     content: "> ";
     color: white;
     margin: 10px;
-    left: 0;
-    
+    left: 0;    
 }
 .container2 a:hover {
     color: white;
@@ -171,15 +161,13 @@
     padding: 8px 35px;
     border: 1px solid #ccc;
     border-radius: 5px 0px 0px 5px ;
-    margin: 0;
-    
+    margin: 0;   
 }
 @media (max-width: 1100px) {
     .searchBox input{
         padding: 9px 15px;
     }
-}
-  
+}  
 .searchBox button {
     padding: 9px 25px;
     border: none;
@@ -187,24 +175,22 @@
     color: white;
     border-radius: 0px 5px 5px 0px;
     cursor: pointer;
-    margin: 0;
-    
+    margin: 0;   
 }
 @media (max-width: 1100px) {
     .searchBox button{
         padding: 9px 15px;
     }
-}
-  
+} 
 .searchBox button:hover {
     background: gray;
 }
-
-
 .footerBottom{
     display: flex;
     justify-content: space-between; 
-    align-items: center; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left; 
     background-color: black; 
     width: 100%;
     padding: 25px 0px;
@@ -215,9 +201,45 @@
     color: white;
     margin-left: 70px;
 }
-@media (max-width: 414px) {
-    .footerBottom p {
+@media (max-width: 600px) {
+    .footerBottom  p {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .footerBottom  {
+        justify-content: center;  
         text-align: center;
     }
 }
-
+.iconbox {
+    display: flex;
+    gap: 15px;           
+    margin-right: 55px;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .iconbox {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.icon1 {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon1:hover{
+    background: black;
+}
+.icon1 img {
+    width: 25px;
+    height: 25px;
+}
