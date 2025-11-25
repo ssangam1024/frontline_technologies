@@ -120,7 +120,7 @@ label {
   color: #333;
   font-weight: 500;
 }
-input,textarea {
+.career-form input,textarea {
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -128,7 +128,7 @@ input,textarea {
   width: 100%;
   box-sizing: border-box;
 }
-input:focus,
+.career-form input:focus,
 textarea:focus {
   border-color: #e63946; 
 }
