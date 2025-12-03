@@ -143,11 +143,11 @@
 .container2 p{
     line-height: 1.5;
 }
-.underline{
+.container2 .underline{
     position: relative;
     display: inline-block;
 }
-.underline::after {
+.container2 .underline::after {
     content: "";
     width: 20px;  
     height: 3px;  
