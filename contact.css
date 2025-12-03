@@ -73,7 +73,16 @@
     display: flex;
     gap: 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+@media (max-width: 500px){
+    .small-info-boxes{
+      flex-direction: column;
+      width: 100%;
+      max-width: 600%;
+      
+    }
+  }
 .address-form{
     text-align: center;
 }
@@ -136,10 +145,10 @@
     flex: 1;
   }
   input,textarea {
-    padding: 10px 15px;
+    padding: 15px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -169,4 +178,9 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  @media (max-width: 600px) {
+    .mapcontainer {
+        display: flex;
+  }
+}
   
