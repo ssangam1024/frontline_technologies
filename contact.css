@@ -37,11 +37,11 @@
     font-size: 1.2rem;
     margin-top: 15px;
 }
-.underline{
+.contactPageContent .underline{
     position: relative;
     display: inline-block;  
 }
-.underline::after {
+.contactPageContent .underline::after {
     content: "";
     width: 40%;  
     height: 3px;  
@@ -113,53 +113,53 @@
     flex: 1;
     max-width: 600px;
 }
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .contact-form {
       margin-left: 0;
     }
-  }
-  @media (max-width: 500px){
+}
+@media (max-width: 500px){
     .contact-form{
       width: 90%;
       max-width: 100%;
       padding: 20px;
     }
-  }
-  .contact-form h2 {
+}
+.contact-form h2 {
     margin-bottom: 20px;
     color: #333;
-  }
-  .form-row {
+}
+.form-row {
     display: flex;
     gap: 15px;
-  }
-  @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
     .form-row {
       flex-direction: column;
     }
-  }
-  .form-group {
+}
+.form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     flex: 1;
-  }
-  input,textarea {
+}
+input,textarea {
     padding: 15px 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
-  }
-  input:focus,
-  textarea:focus {
+}
+input:focus,
+textarea:focus {
     border-color: #e63946; 
-  }
-  textarea {
+}
+textarea {
     resize: none;
-  }
-  .btn-sendMessage {
+}
+.btn-sendMessage {
     background-color: #e63946;
     color: #fff;
     border: none;
@@ -170,17 +170,16 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-  }
-  .btn-sendMessage:hover {
+}
+.btn-sendMessage:hover {
     background-color: #d62828;
-  }
-  .mapcontainer{
+}
+.mapcontainer{
     margin-top: 40px;
     margin-bottom: 40px;
-  }
-  @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
     .mapcontainer {
         display: flex;
   }
 }
-  
