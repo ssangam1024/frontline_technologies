@@ -214,10 +214,28 @@
   cursor: pointer;
   transition: transform 0.3s; 
 }
+.chooseUs ul {
+  margin-top: 20px;
+  text-align: justify;
+  padding-left: 20px;
+  list-style: none; 
+}
+
+
+.chooseUs li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+ul li::before {
+  content: "➤";
+  color: lightcoral;
+  margin-right: 8px;
+}
 .chooseUsButtons:hover{
   transform: translateY(-5px);
 }
-.js-message {display:none
+.js-message {
+  display:none
 }
 @media (min-width: 768px){
   .chooseUs{
@@ -225,6 +243,7 @@
     flex-wrap: wrap;
   }
 }
+
 .black-section1{
   background: #111;
     margin-bottom: 100px;
@@ -246,6 +265,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   margin-top: 40px; 
+  text-align: center;
   flex: 1;
   transform: skewY(+3deg);   
 }
